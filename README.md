@@ -15,7 +15,7 @@ Additionally, I ended up restyling the game completely and adding several new fe
 
 + Welcoming screen introduces you to the game world and helps you dive into it's atmosphere.    
 + **Multiple** options for game difficulty.
-+ The game is totally flexible among all known screen sizes.
++ The game is totally flexible across all known screen sizes.
 + To control a space ship player can use not only keyboard arrow keys, but also on screen buttons.
 + The game supports mobile devices and touch screens.
 + Endgame congratulation messages are styled accordingly to a player's ship choice in the beginning.  

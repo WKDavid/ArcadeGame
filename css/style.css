@@ -1,0 +1,271 @@
+body {
+  text-align: center;
+  display: block;
+  background-color: black;
+}
+
+h2, h3, h4 {
+  padding-left: 3vw;
+  padding-right: 3vw;
+}
+
+.welcomePopup, .winPopupJedi, .winPopupSith {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   padding-top: 5vw;
+   padding-left: 3vw;
+   padding-right: 3vw;
+   left: 0;
+   top: 0;
+   width: 100vw;
+   height: 100vh;
+   overflow: scroll;
+   background-color: rgb(0,0,0);
+   text-align: center;
+   font-family: Georgia, Verdana, Helvetica;
+   border: 1px solid black;
+   font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.welcomePopup {
+  color: #eae00d;
+}
+
+
+.winPopupJedi {
+  color: #4b85c7;
+}
+
+.winPopupSith {
+  color: #db0000;
+}
+
+.choices {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 20vw;
+  padding-right: 10vw;
+  color: black;
+  margin-bottom: 10vw;
+}
+
+.choiceRestartJedi, .choiceBackJedi {
+  background-color: #4b85c7;
+}
+
+.choiceBackJedi, .choiceBackSith {
+  margin: auto;
+}
+
+.choiceRestartSith, .choiceBackSith {
+  background-color: #db0000;
+}
+
+.choiceRestartJedi, .choiceRestartSith, .choiceBackJedi, .choiceBackSith {
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 5.8vw;
+  width: auto;
+  height: auto;
+}
+
+.choiceRestartJedi:hover, .choiceBackJedi:hover {
+  box-shadow:0 0 4vw #e3f2f4;
+}
+
+.choiceRestartSith:hover, .choiceBackSith:hover {
+  box-shadow:0 0 4vw #9c2121;
+}
+
+.winJediGifs {
+  width: 100vw;
+}
+
+.fireworksJedi {
+  width: 20vw;
+}
+
+.hyperJumpJedi{
+  width: 32vw;
+}
+
+.winSithGifs {
+  width: 100vw;
+}
+
+.fireworksSith {
+  width: 18.5vw;
+}
+
+.hyperJumpSith{
+  width: 22vw;
+}
+
+.ships {
+  width: 7vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 25vw;
+  padding-right: 3vw;
+}
+
+.eachButton {
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+section {
+  padding-bottom: 3vw;
+}
+
+input, label {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 0.8vw;
+  height: 0.8vw;
+  border-radius: 5px;
+  border: 2px solid #eae00d;
+  cursor: pointer;
+  outline: none;
+}
+
+input:checked {
+  background-color: #eae00d;
+}
+
+input:hover {
+  border: 1px solid #e3f2f4;
+}
+
+label:hover {
+  border: 3px solid #e3f2f4;
+  color: #e3f2f4;
+}
+
+article {
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.jedi {
+  color: #4b85c7;
+}
+
+.sith {
+  color: #db0000;
+}
+
+canvas {
+  width: 40vw;
+}
+
+img {
+  width: 5vw;
+  cursor: pointer;
+}
+
+/* media queries for different screen sizes */
+@media screen and (min-width: 1800px) {
+  canvas {
+    width: 35vw;
+  }
+  img {
+    width: 4vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  canvas {
+    width: 55vw;
+  }
+  img {
+    width: 7vw;
+  }
+  input, label {
+    width: 1.2vw;
+    height: 1.2vw;
+  }
+  .ships {
+    width: 9vw;
+  }
+  .fireworksJedi {
+    width: 25vw;
+  }
+  .hyperJumpJedi{
+    width: 37vw;
+  }
+  .fireworksSith {
+    width: 23.5vw;
+  }
+  .hyperJumpSith{
+    width: 27vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  canvas {
+    width: 70vw;
+  }
+  img {
+    width: 8vw;
+  }
+  input, label {
+    width: 1.5vw;
+    height: 1.5vw;
+  }
+  .ships {
+    width: 12vw;
+  }
+  .fireworksJedi {
+    width: 28.5vw;
+  }
+  .hyperJumpJedi{
+    width: 40.5vw;
+  }
+  .fireworksSith {
+    width: 27vw;
+  }
+  .hyperJumpSith{
+    width: 30.5vw;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  canvas {
+    width: 80vw;
+  }
+  img {
+    width: 15vw;
+  }
+  input, label {
+    width: 2vw;
+    height: 2vw;
+  }
+  .ships {
+    width: 14vw;
+  }
+  .fireworksJedi {
+    width: 28vw;
+  }
+  .hyperJumpJedi{
+    width: 41vw;
+  }
+  .fireworksSith {
+    width: 26.5vw;
+  }
+  .hyperJumpSith{
+    width: 31vw;
+  }
+}

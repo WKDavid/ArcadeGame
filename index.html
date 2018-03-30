@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="FEND arcade frogger game, frontend nanodegree arcade game">
+    <meta name="author" content="David Yurkin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effective JavaScript: Frogger</title>
+    <meta name="description" content="Arcade game frogger">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <img class="arrowUp" src="images/arrowUp.jpg" alt="Arrow up"/><br>
+    <img class="arrowLeft" src="images/arrowLeft.jpg" alt="Arrow left"/>
+    <img class="arrowDown" src="images/arrowDown.jpg" alt="Arrow down"/>
+    <img class="arrowRight" src="images/arrowRight.jpg" alt="Arrow right"/>
+  </header>
+  <dialog class="welcomePopup">
+    <h3>Welcome to the training facility of spaceship pilots, youngling!</h3>
+    <h4>Read the following instructions carefully and choose wisely.</h4>
+    <article>
+      Your primary goal is to reach one of the intergalactic gravitational singularities on top of the space screen.
+      To control your spaceship, use arrow keys of your keyboard or leverage the brand new, shiny, beautiful on screen arrows.
+      On your way, do your best to avoid collision with hostile planetoids. The lava iron spike giants are slow, whereas white
+      doombringers are smaller, but fast and deadly. All training ships are equipped with automatic threat detection system, which
+      includes subspace mobile teleportation surround fields, so that in case of potential collision you will be automatically teleported
+      to the starting position.<br /> However, before we start...
+    </article>
+    <form class="difficulty">
+      <h4>Your difficulty level:</h4>
+      <div class="buttons">
+        <div class="eachButton">
+          <label><input type="radio" name="difficultyLevel" value="Simple" checked> Simple</label>
+        </div>
+        <div class="eachButton">
+          <label><input type="radio" name="difficultyLevel" value="Maybe"> Maybe</label>
+        </div>
+        <div class="eachButton">
+          <label><input type="radio" name="difficultyLevel" value="Frustrating"> Frustrating</label>
+        </div>
+        <div class="eachButton">
+          <label><input type="radio" name="difficultyLevel" value="Problematic"> Problematic</label>
+        </div>
+        <div class="eachButton">
+          <label><input type="radio" name="difficultyLevel" value="Force be with you"> Force be with you</label>
+        </div>
+        <div class="eachButton">
+          <label><input type="radio" name="difficultyLevel" value="Just don't"> Just don't</label>
+        </div>
+      </div>
+    </form>
+    <section>
+      <h4>Choose your ship, your energy, your force... The choice will shape your destiny, your future and your nature...</h4>
+      <span class="jedi">Jedi</span>
+      <img class="ships" src="images/jedi-ship.png"/>
+      <span class="sith">Sith</span>
+      <img class="ships" src="images/sith-ship.png"/>
+    </section>
+  </dialog>
+  <dialog class="winPopupJedi">
+    <div class="winJediGifs">
+      <img class="fireworksJedi" src="images/fireworksJedi.gif" alt="jedi fireworks gif image"/>
+      <img class="hyperJumpJedi" src="images/hyperjumpJ.gif" alt="jedi hyper jump gif image"/>
+      <img class="fireworksJedi" src="images/fireworksJedi.gif" alt="jedi fireworks gif image"/>
+    </div>
+    <h2>Congratulations on conquering the battlship training challenge, young Jedi!<br>Way to go babe!!!</h2>
+    <h4>You have chosen the path of light and bright future lies ahead of you. Be cool, fight for peace.</h4>
+    <div class="choices">
+      <div class="choiceRestartJedi">
+        <span class="endButtonText">Restart the game</span>
+      </div>
+      <div class="choiceBackJedi">
+        <span class="endButtonText">Back to the game</span>
+      </div>
+    </div>
+  </dialog>
+  <dialog class="winPopupSith">
+    <div class="winSithGifs">
+      <img class="fireworksSith" src="images/fireworksSith.gif" alt="sith fireworks gif image"/>
+      <img class="hyperJumpSith" src="images/hyperjumpS.gif" alt="sith hyper jump gif image"/>
+      <img class="fireworksSith" src="images/fireworksSith.gif" alt="sith fireworks gif image"/>
+    </div>
+    <h2>Well well, what do we have here... A young offspring of darkness. Enjoy your small victory for now, you adorable little scumbag.</h2>
+    <h4>Later your master will show you, how to poke Jedi, take advantage of the weak and fully enjoy lust of dark powers.</h4>
+    <div class="choices">
+      <div class="choiceRestartSith">
+        <span class="endButtonText">Restart the game</span>
+      </div>
+      <div class="choiceBackSith">
+        <span class="endButtonText">Back to the game</span>
+      </div>
+    </div>
+  </dialog>
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>

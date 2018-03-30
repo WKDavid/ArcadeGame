@@ -21,6 +21,6 @@ Additionally, I ended up restyling the game completely and adding several new fe
 + Endgame congratulation messages are styled accordingly to a player's ship choice in the beginning.  
 
 ## How to play the game:
-+ Please feel free to play the game by clicking **[here](https://wkdavid.github.io/CardMatchingGame/)**
-+ Alternatively, you can [download the project](https://github.com/WKDavid/CardMatchingGame/archive/master.zip)
-+ or clone it <https://github.com/WKDavid/CardMatchingGame.git>, then run _index.html_ and enjoy the game ;)
++ Please feel free to play the game by clicking **[here](https://wkdavid.github.io/ArcadeGame/)**
++ Alternatively, you can [download the project](https://github.com/WKDavid/ArcadeGame/archive/master.zip)
++ or clone it <https://github.com/WKDavid/ArcadeGame.git>, then run _index.html_ and enjoy the game ;)
